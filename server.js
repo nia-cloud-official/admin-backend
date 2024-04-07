@@ -23,7 +23,7 @@ const db = mysql.createConnection({
   user: 'vznvqlqg', // User & Default database
   host: 'manny.db.elephantsql.com', // Server
   database: 'vznvqlqg', // User & Default database
-  password: 'your_password', // Password (replace with your actual password)
+  password: 'xL8tr6iPEOAYvR40tHwh8Y7wub53_79k', // Password (replace with your actual password)
   port: 5432, // Default PostgreSQL port
 });
 
