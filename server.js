@@ -20,10 +20,11 @@ app.use(passport.session());
 
 // MySQL Connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'root'
+  user: 'vznvqlqg', // User & Default database
+  host: 'manny.db.elephantsql.com', // Server
+  database: 'vznvqlqg', // User & Default database
+  password: 'your_password', // Password (replace with your actual password)
+  port: 5432, // Default PostgreSQL port
 });
 
 // Passport configuration
