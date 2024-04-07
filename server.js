@@ -32,7 +32,7 @@ passport.use(new Auth0Strategy({
   domain: 'niacloud.us.auth0.com',
   clientID: '0mOWQuQOQB32P3HKMPNtBq1ndq7DNFki',
   clientSecret: '0aDzJuzhsGcjG2CPZYIf-FcU9Q6PSThXT0bdoTzpZtaPWMrToGt0finUnzPlw3rH',
-  callbackURL: 'http://https://admin-backend-fmkg.onrender.com/callback'
+  callbackURL: 'https://admin-backend-fmkg.onrender.com/callback'
 }, (accessToken, refreshToken, extraParams, profile, done) => done(null, profile)));
 
 passport.serializeUser((user, done) => {
