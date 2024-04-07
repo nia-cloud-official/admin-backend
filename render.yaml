@@ -1,0 +1,17 @@
+services:
+- type: web
+  name: cohs-admin-dashboard
+  env: node
+  buildCommand: npm install
+  startCommand: npm start
+  envVars:
+  - key: AUTH0_CLIENT_ID
+    value: '0mOWQuQOQB32P3HKMPNtBq1ndq7DNFki'
+  - key: AUTH0_CLIENT_SECRET
+    value: '0aDzJuzhsGcjG2CPZYIf-FcU9Q6PSThXT0bdoTzpZtaPWMrToGt0finUnzPlw3rH'
+  - key: AUTH0_DOMAIN
+    value: 'niacloud.us.auth0.com'
+  - key: SESSION_SECRET
+    generateValue: true
+  - key: DATABASE_URL
+    sync: false

@@ -18,7 +18,8 @@ app.use(session({ secret: secretKey, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-// MySQL Connection
+
+/* // MySQL Connection
 const db = mysql.createConnection({
   user: 'vznvqlqg', // User & Default database
   host: 'manny.db.elephantsql.com', // Server
@@ -26,7 +27,7 @@ const db = mysql.createConnection({
   password: 'xL8tr6iPEOAYvR40tHwh8Y7wub53_79k', // Password (replace with your actual password)
   port: 5432, // Default PostgreSQL port
 });
-
+*/
 // Passport configuration
 passport.use(new Auth0Strategy({
   domain: 'niacloud.us.auth0.com',
