@@ -75,7 +75,7 @@ app.get('/dashboard', (req, res) => {
 // Logout Route
 app.get('/logout', (req, res) => {
   req.logout(() => {}); // Log out the user
-  res.redirect('/'); // Redirect the user to the home page or any other appropriate page
+  res.redirect('/login'); // Redirect the user to the home page or any other appropriate page
 });
 
 
