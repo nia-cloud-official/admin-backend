@@ -66,7 +66,7 @@ app.get('/callback', passport.authenticate('auth0', {
 // Dashboard Route
 app.get('/dashboard', (req, res) => {
   if (req.isAuthenticated()) {
-    res.send('Welcome to Dashboard');
+    res.redirect('https://dashboard.cohs.education/');
   } else {
     res.redirect('/login');
   }
