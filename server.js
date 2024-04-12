@@ -66,7 +66,7 @@ app.get('/callback', passport.authenticate('auth0', {
 // Dashboard Route
 app.get('/dashboard', (req, res) => {
   if (req.isAuthenticated()) {
-    res.redirect('https://dashboard.cohs.education/');
+    res.redirect('https://dashboard.cohs.education/dash.php');
   } else {
     res.redirect('/login');
   }
@@ -75,7 +75,7 @@ app.get('/dashboard', (req, res) => {
 // Logout Route
 app.get('/logout', (req, res) => {
   req.logout(() => {}); // Log out the user
-  res.redirect('https://cohs.education'); // Redirect the user to the home page or any other appropriate page
+  res.redirect('https://dashboard.cohs.education'); // Redirect the user to the home page or any other appropriate page
 });
 
 
